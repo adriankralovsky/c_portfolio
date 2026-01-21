@@ -1,0 +1,25 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.obj
+
+# Libraries
+*.a
+*.so
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Folder config
+.DS_Store
+.vscode/
+.idea/
+
+# Build directories
+build/
+bin/
