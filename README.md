@@ -4,6 +4,8 @@ Welcome to my portfolio of low-level system programming projects. This repositor
 
 The projects are implemented from scratch with a focus on clean code, manual memory management, and efficient resource usage.
 
+# ⚠️⚠️⚠️ THIS REPO IS A WORK IN PROGRESS ⚠️⚠️⚠️
+
 ## 📂 Project Categories
 
 ### 🧠 Core Systems & Virtualization
