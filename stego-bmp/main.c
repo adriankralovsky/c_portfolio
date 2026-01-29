@@ -156,14 +156,14 @@ int main(int argc, char *argv[]) {
         goto close_files;
     }
 
-    if (message != NULL && infile != NULL) {
+    if (message != NULL && infile != NULL && enc_dec != -1) {
         fprintf(stderr, "[-m | -f]: Can pick either message or file, not both!\n");
         print_usage();
         error++;
         goto close_files;
     }
 
-    if (message == NULL && infile == NULL) {
+    if (message == NULL && infile == NULL && enc_dec != DECODE) {
         fprintf(stderr, "[-m | -f]: At least one has to be specified!\n");
         print_usage();
         error++;
@@ -178,7 +178,7 @@ int main(int argc, char *argv[]) {
     }
 
     if (enc_dec == ENCODE) {
-        error = encode_file(bmp_input, outfile, message, infile);
+        error = encode_file(bmp_input, bmp_output, message, infile);
     }
     else {
         error = decode_file(bmp_input, outfile);
